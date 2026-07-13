@@ -1,13 +1,6 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "/*"
-  to = "/:splat/"
-  status = 301
-  force = false
-  conditions = {Path = ["*[^/]"]}
-
 [[headers]]
   for = "/*"
   [headers.values]
