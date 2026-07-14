@@ -1,6 +1,11 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "https://www.ccdoctor.co.kr/*"
+  to = "https://ccdoctor.co.kr/:splat"
+  status = 301
+  force = true
 [[headers]]
   for = "/*"
   [headers.values]
