@@ -189,14 +189,14 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
 .footer-name{font-size:16px;font-weight:800;margin-bottom:4px;}
 .footer-ph{font-size:18px;font-weight:800;color:var(--g);margin-bottom:4px;}
 
-.qcard-wrap{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);border-radius:16px;padding:20px 22px;flex-shrink:0;min-width:200px;}
-.qcard-time{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:4px;font-weight:500;}
-.qcard-min{font-size:42px;font-weight:800;color:#fff;line-height:1;margin-bottom:2px;}
-.qcard-min span{font-size:20px;font-weight:700;}
-.qcard-area{font-size:12px;color:rgba(255,255,255,.65);margin-bottom:14px;}
-.qcard-items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px;}
-.qcard-items li{font-size:12px;color:rgba(255,255,255,.92);display:flex;align-items:center;gap:6px;}
-.qcard-items li::before{content:"•";color:#FFD700;font-size:14px;flex-shrink:0;}
+
+
+
+
+
+
+
+
 
 .toc-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:14px 18px;margin-bottom:24px;}
 .toc-title{font-size:12px;font-weight:700;color:rgba(255,255,255,.75);margin-bottom:8px;letter-spacing:1px;}
@@ -213,10 +213,22 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
 .dong-table th{background:var(--p,#4c1d95);color:#fff;padding:7px 9px;text-align:left;}
 .dong-table td{padding:6px 9px;border-bottom:1px solid #e0d8f0;}
 .dong-table a{color:var(--p,#4c1d95);text-decoration:none;}
-@media(max-width:640px){.qcard-wrap{min-width:100%;}}
+@media(max-width:640px){}
 
+
+.info-card{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:22px 20px;min-width:180px;max-width:220px;flex-shrink:0;}
+.ic-top{text-align:center;margin-bottom:14px;}
+.ic-label{font-size:11px;color:rgba(255,255,255,.65);letter-spacing:.8px;margin-bottom:4px;}
+.ic-time{font-size:44px;font-weight:900;color:#F9A825;line-height:1;}
+.ic-time em{font-size:18px;font-weight:700;font-style:normal;}
+.ic-area{font-size:11px;color:rgba(255,255,255,.55);margin-top:3px;}
+.ic-divider{border:none;border-top:1px solid rgba(255,255,255,.18);margin:12px 0;}
+.ic-rows{display:flex;flex-direction:column;gap:8px;}
+.ic-row{display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(255,255,255,.88);}
+.ic-dot{width:5px;height:5px;border-radius:50%;background:#F9A825;flex-shrink:0;}
+@media(max-width:600px){.info-card{min-width:unset;max-width:unset;width:100%;}}
 </style>
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
 </head>
 <body>
 <div class="top-bar">📞 충청권 배관 막힘 즉시 출동 <a href="tel:07080980561">070-8098-0561</a> — 현장 확인 후 견적</div>
@@ -243,12 +255,9 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
       <span class="hero-cta-sub">터치하여 전화걸기</span>
     </a>
     <div class="hero-tags"><div class="hero-tag">✅ 무료 현장 견적</div><div class="hero-tag">⚡ 즉시 출동</div><div class="hero-tag">💬 비용 먼저 안내</div><div class="hero-tag">✅ 365일 출동</div></div>
-      <div class="hero-tag">⚡ 당일 출동</div>
-      <div class="hero-tag">💬 현장 확인 후 안내</div>
-      <div class="hero-tag">✅ 24시간 접수</div>
     </div>
-  </div>
-  <div class="qcard-wrap"><div class="qcard-time">평균 도착 시간</div><div class="qcard-min">30<span>분</span></div><div class="qcard-area">분평동 기준</div><ul class="qcard-items"><li>동의 후에만 작업 시작</li><li>출장비 무료</li><li>365일 상담 가능</li><li>과한 청구 하지 않아요</li></ul></div>
+  <div class="info-card"><div class="ic-top"><div class="ic-label">평균 도착</div><div class="ic-time">27<em>분</em></div><div class="ic-area">분평동 기준</div></div><hr class="ic-divider"><div class="ic-rows"><div class="ic-row"><div class="ic-dot"></div>증상 설명 후 출동 결정</div><div class="ic-row"><div class="ic-dot"></div>도착 전 예상 비용 안내</div><div class="ic-row"><div class="ic-dot"></div>연중무휴 응급 출동</div><div class="ic-row"><div class="ic-dot"></div>작업 후 AS 안내</div></div></div>
+</div>
 </div>
 </section>
 
@@ -278,7 +287,7 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
 20년 이상: 코팅 완전 손상, 자주 막힘
 
 분평동에서 변기 연식에 맞는 처리 방법을 선택해요.</p></div>
-<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비 보유</h2><div class="equip-photos"><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-05.jpg" alt="충청 배관닥터 전문 장비 1" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 1</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-04.jpg" alt="충청 배관닥터 전문 장비 2" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 2</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-02.jpg" alt="충청 배관닥터 전문 장비 3" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 3</div></div></div>
+<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비 보유</h2><div class="equip-photos" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;"><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-05.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 1</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-04.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 2</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-02.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 3</div></div></div>
 <div class="sl">FAQ</div><h2 class="st">분평동 변기막힘 자주 묻는 질문</h2><div class="faq-item"><div class="fq">Q. 이물질을 빠뜨렸어요.</div><div class="fa">A. 내시경으로 위치 확인 후 회수 장비로 제거해요.</div></div><div class="faq-item"><div class="fq">Q. 변기를 반드시 탈거해야 하나요?</div><div class="fa">A. 먼저 탈거 없이 처리를 시도해요.</div></div><div class="faq-item"><div class="fq">Q. 뚫어뻥으로 안 뚫려요.</div><div class="fa">A. 이물질이 끼어 있을 수 있어요. 내시경 진단이 필요해요.</div></div><div class="faq-item"><div class="fq">Q. 물을 내리면 바닥 배수구로 넘쳐요.</div><div class="fa">A. 공동 오수관 막힘일 수 있어요. 즉시 연락해주세요.</div></div>
 <div class="sl">GALLERY</div><h2 class="st">분평동 변기막힘 실제 작업 사진</h2><div class="gallery-grid"><div><img src="/images/toilet/ccdoctor-toilet-10.jpg" alt="분평동 변기막힘 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/toilet/ccdoctor-toilet-06.jpg" alt="분평동 변기막힘 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/toilet/ccdoctor-toilet-12.jpg" alt="분평동 변기막힘 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/toilet/ccdoctor-toilet-17.jpg" alt="분평동 변기막힘 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/toilet/ccdoctor-toilet-04.jpg" alt="분평동 변기막힘 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div></div>
 <div class="sl">NEARBY</div>

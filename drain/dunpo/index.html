@@ -189,14 +189,14 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
 .footer-name{font-size:16px;font-weight:800;margin-bottom:4px;}
 .footer-ph{font-size:18px;font-weight:800;color:var(--g);margin-bottom:4px;}
 
-.qcard-wrap{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);border-radius:16px;padding:20px 22px;flex-shrink:0;min-width:200px;}
-.qcard-time{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:4px;font-weight:500;}
-.qcard-min{font-size:42px;font-weight:800;color:#fff;line-height:1;margin-bottom:2px;}
-.qcard-min span{font-size:20px;font-weight:700;}
-.qcard-area{font-size:12px;color:rgba(255,255,255,.65);margin-bottom:14px;}
-.qcard-items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px;}
-.qcard-items li{font-size:12px;color:rgba(255,255,255,.92);display:flex;align-items:center;gap:6px;}
-.qcard-items li::before{content:"•";color:#FFD700;font-size:14px;flex-shrink:0;}
+
+
+
+
+
+
+
+
 
 .toc-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:14px 18px;margin-bottom:24px;}
 .toc-title{font-size:12px;font-weight:700;color:rgba(255,255,255,.75);margin-bottom:8px;letter-spacing:1px;}
@@ -213,10 +213,22 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
 .dong-table th{background:var(--p,#4c1d95);color:#fff;padding:7px 9px;text-align:left;}
 .dong-table td{padding:6px 9px;border-bottom:1px solid #e0d8f0;}
 .dong-table a{color:var(--p,#4c1d95);text-decoration:none;}
-@media(max-width:640px){.qcard-wrap{min-width:100%;}}
+@media(max-width:640px){}
 
+
+.info-card{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:22px 20px;min-width:180px;max-width:220px;flex-shrink:0;}
+.ic-top{text-align:center;margin-bottom:14px;}
+.ic-label{font-size:11px;color:rgba(255,255,255,.65);letter-spacing:.8px;margin-bottom:4px;}
+.ic-time{font-size:44px;font-weight:900;color:#F9A825;line-height:1;}
+.ic-time em{font-size:18px;font-weight:700;font-style:normal;}
+.ic-area{font-size:11px;color:rgba(255,255,255,.55);margin-top:3px;}
+.ic-divider{border:none;border-top:1px solid rgba(255,255,255,.18);margin:12px 0;}
+.ic-rows{display:flex;flex-direction:column;gap:8px;}
+.ic-row{display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(255,255,255,.88);}
+.ic-dot{width:5px;height:5px;border-radius:50%;background:#F9A825;flex-shrink:0;}
+@media(max-width:600px){.info-card{min-width:unset;max-width:unset;width:100%;}}
 </style>
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
 </head>
 <body>
 <div class="top-bar">📞 충청권 배관 막힘 즉시 출동 <a href="tel:07080980561">070-8098-0561</a> — 현장 확인 후 견적</div>
@@ -243,12 +255,9 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
       <span class="hero-cta-sub">터치하여 전화걸기</span>
     </a>
     <div class="hero-tags"><div class="hero-tag">✅ 고객 동의 후 작업</div><div class="hero-tag">⚡ 365일 출동</div><div class="hero-tag">💬 투명한 견적</div><div class="hero-tag">✅ 당일 해결</div></div>
-      <div class="hero-tag">⚡ 당일 출동</div>
-      <div class="hero-tag">💬 현장 확인 후 안내</div>
-      <div class="hero-tag">✅ 24시간 접수</div>
     </div>
-  </div>
-  <div class="qcard-wrap"><div class="qcard-time">평균 도착 시간</div><div class="qcard-min">27<span>분</span></div><div class="qcard-area">둔포면 기준</div><ul class="qcard-items"><li>비용 안내 후 작업</li><li>방문비 무료</li><li>공휴일·주말 출동</li><li>과견적 걱정 없어요</li></ul></div>
+  <div class="info-card"><div class="ic-top"><div class="ic-label">평균 도착</div><div class="ic-time">27<em>분</em></div><div class="ic-area">둔포면 기준</div></div><hr class="ic-divider"><div class="ic-rows"><div class="ic-row"><div class="ic-dot"></div>작업 전 반드시 비용 안내</div><div class="ic-row"><div class="ic-dot"></div>무료 방문 견적</div><div class="ic-row"><div class="ic-dot"></div>365일 출동 가능</div><div class="ic-row"><div class="ic-dot"></div>투명하게 안내</div></div></div>
+</div>
 </div>
 </section>
 
@@ -276,7 +285,7 @@ DIY: 비용 없음, 단순 이물질만 해결, 노후 배관 손상 위험
 전문 업체: 내시경 정확 진단, 고압세척 장비 보유, 재발 방지 조언
 
 둔포면에서 뚫어뻥으로 안 되면 즉시 전문 업체에 맡기는 게 안전해요.</p></div>
-<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비 보유</h2><div class="equip-photos"><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-01.jpg" alt="충청 배관닥터 전문 장비 1" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 1</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-02.jpg" alt="충청 배관닥터 전문 장비 2" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 2</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-05.jpg" alt="충청 배관닥터 전문 장비 3" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 3</div></div></div>
+<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비 보유</h2><div class="equip-photos" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;"><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-01.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 1</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-02.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 2</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-05.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 3</div></div></div>
 <div class="sl">PROCESS</div><h2 class="st">둔포면 하수구막힘 처리 과정</h2><div class="process-wrap"><div class="pstep"><div class="psn">1</div><strong>상담 접수</strong><p>증상 청취</p></div><div class="pstep"><div class="psn">2</div><strong>긴급 출동</strong><p>둔포면 이동</p></div><div class="pstep"><div class="psn">3</div><strong>현장 확인</strong><p>상태 파악</p></div><div class="pstep"><div class="psn">4</div><strong>원인 진단</strong><p>내시경 투입</p></div><div class="pstep"><div class="psn">5</div><strong>견적 안내</strong><p>비용 확정</p></div><div class="pstep"><div class="psn">6</div><strong>작업 시작</strong><p>고압세척</p></div><div class="pstep"><div class="psn">7</div><strong>완료 점검</strong><p>배수 확인</p></div><div class="pstep"><div class="psn">8</div><strong>사후 안내</strong><p>관리 방법</p></div></div>
 <div class="sl">CAUTION</div><h2 class="st">이런 실수는 피하세요</h2><div class="mistake-box"><div class="mi"><span class="mx">✕</span><span class="mt"><strong>뜨거운 물만 반복해서 붓기</strong> — 기름이 일시적으로 녹지만 하류에서 다시 굳어요</span></div><div class="mi"><span class="mx">✕</span><span class="mt"><strong>강한 화학 약품 과다 투입</strong> — 배관 내벽 부식을 촉진해 수명이 단축돼요</span></div><div class="mi"><span class="mx">✕</span><span class="mt"><strong>원인 파악 없이 무작정 뚫기</strong> — 이물질이 더 깊이 들어가 복구 비용이 커져요</span></div><div class="mi"><span class="mx">✕</span><span class="mt"><strong>비전문 업체 임시 처리</strong> — 며칠 후 재발하면 추가 비용이 더 들어요</span></div></div>
 <div class="sl">PRICE</div><h2 class="st">둔포면 하수구막힘 비용 안내</h2><div class="cost-wrap"><div class="cr"><span class="cl">출장비</span><span class="cp">무료 방문</span></div><div class="cr"><span class="cl">작업 비용</span><span class="cp">현장 확인 후 안내</span></div><div class="cr"><span class="cl">야간·공휴일</span><span class="cp">별도 할증 없음</span></div><div class="cr"><span class="cl">과견적</span><span class="cp">절대 없음</span></div></div><p class="cn">※ 현장에서 상태를 직접 보고 정확하게 안내해요. 작업 전 반드시 비용 안내 후 동의를 받고 시작해요.</p>

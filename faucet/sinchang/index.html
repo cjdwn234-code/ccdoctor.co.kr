@@ -189,14 +189,14 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
 .footer-name{font-size:16px;font-weight:800;margin-bottom:4px;}
 .footer-ph{font-size:18px;font-weight:800;color:var(--g);margin-bottom:4px;}
 
-.qcard-wrap{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);border-radius:16px;padding:20px 22px;flex-shrink:0;min-width:200px;}
-.qcard-time{font-size:13px;color:rgba(255,255,255,.75);margin-bottom:4px;font-weight:500;}
-.qcard-min{font-size:42px;font-weight:800;color:#fff;line-height:1;margin-bottom:2px;}
-.qcard-min span{font-size:20px;font-weight:700;}
-.qcard-area{font-size:12px;color:rgba(255,255,255,.65);margin-bottom:14px;}
-.qcard-items{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:7px;}
-.qcard-items li{font-size:12px;color:rgba(255,255,255,.92);display:flex;align-items:center;gap:6px;}
-.qcard-items li::before{content:"•";color:#FFD700;font-size:14px;flex-shrink:0;}
+
+
+
+
+
+
+
+
 
 .toc-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:14px 18px;margin-bottom:24px;}
 .toc-title{font-size:12px;font-weight:700;color:rgba(255,255,255,.75);margin-bottom:8px;letter-spacing:1px;}
@@ -213,10 +213,22 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
 .dong-table th{background:var(--p,#4c1d95);color:#fff;padding:7px 9px;text-align:left;}
 .dong-table td{padding:6px 9px;border-bottom:1px solid #e0d8f0;}
 .dong-table a{color:var(--p,#4c1d95);text-decoration:none;}
-@media(max-width:640px){.qcard-wrap{min-width:100%;}}
+@media(max-width:640px){}
 
+
+.info-card{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:22px 20px;min-width:180px;max-width:220px;flex-shrink:0;}
+.ic-top{text-align:center;margin-bottom:14px;}
+.ic-label{font-size:11px;color:rgba(255,255,255,.65);letter-spacing:.8px;margin-bottom:4px;}
+.ic-time{font-size:44px;font-weight:900;color:#F9A825;line-height:1;}
+.ic-time em{font-size:18px;font-weight:700;font-style:normal;}
+.ic-area{font-size:11px;color:rgba(255,255,255,.55);margin-top:3px;}
+.ic-divider{border:none;border-top:1px solid rgba(255,255,255,.18);margin:12px 0;}
+.ic-rows{display:flex;flex-direction:column;gap:8px;}
+.ic-row{display:flex;align-items:center;gap:7px;font-size:12px;color:rgba(255,255,255,.88);}
+.ic-dot{width:5px;height:5px;border-radius:50%;background:#F9A825;flex-shrink:0;}
+@media(max-width:600px){.info-card{min-width:unset;max-width:unset;width:100%;}}
 </style>
-<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
 </head>
 <body>
 <div class="top-bar">📞 충청권 배관 막힘 즉시 출동 <a href="tel:07080980561">070-8098-0561</a> — 현장 확인 후 견적</div>
@@ -243,12 +255,9 @@ footer{background:#1B5E20;color:#fff;padding:32px 20px;text-align:center;font-si
       <span class="hero-cta-sub">터치하여 전화걸기</span>
     </a>
     <div class="hero-tags"><div class="hero-tag">✅ 무상 현장 진단</div><div class="hero-tag">⚡ 공휴일 출동</div><div class="hero-tag">💬 A/S 보장</div><div class="hero-tag">✅ 365일 24시간</div></div>
-      <div class="hero-tag">⚡ 당일 출동</div>
-      <div class="hero-tag">💬 출장비 무료</div>
-      <div class="hero-tag">✅ 24시간 접수</div>
     </div>
-  </div>
-  <div class="qcard-wrap"><div class="qcard-time">평균 도착 시간</div><div class="qcard-min">30<span>분</span></div><div class="qcard-area">신창면 기준</div><ul class="qcard-items"><li>작업 전 견적 필수 안내</li><li>출장비 청구 없음</li><li>꼼꼼 사후관리</li><li>빠른 현장 해결</li></ul></div>
+  <div class="info-card"><div class="ic-top"><div class="ic-label">평균 도착</div><div class="ic-time">28<em>분</em></div><div class="ic-area">신창면 기준</div></div><hr class="ic-divider"><div class="ic-rows"><div class="ic-row"><div class="ic-dot"></div>도착 즉시 원인 설명</div><div class="ic-row"><div class="ic-dot"></div>예상 비용 먼저 안내</div><div class="ic-row"><div class="ic-dot"></div>작업 거부 가능</div><div class="ic-row"><div class="ic-dot"></div>완료 후 배수 테스트</div></div></div>
+</div>
 </div>
 </section>
 
@@ -279,7 +288,7 @@ YEARLY: 수전 상태 전반을 점검하세요
 <div class="sl">GALLERY</div><h2 class="st">신창면 수전·수도 수리 실제 작업 사진</h2><div class="gallery-grid"><div><img src="/images/faucet/ccdoctor-faucet-08.jpg" alt="신창면 수전·수도 수리 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/faucet/ccdoctor-faucet-13.jpg" alt="신창면 수전·수도 수리 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/faucet/ccdoctor-faucet-03.jpg" alt="신창면 수전·수도 수리 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div><div><img src="/images/faucet/ccdoctor-faucet-01.jpg" alt="신창면 수전·수도 수리 실제 작업 사진 | 충청 배관닥터" loading="lazy" width="400" height="300" style="width:100%;height:200px;object-fit:cover;border-radius:8px;"></div></div>
 <div class="sl">PRICE</div><h2 class="st">신창면 수전·수도 수리 비용 안내</h2><div class="cost-wrap"><div class="cr"><span class="cl">출장비</span><span class="cp">무료 방문</span></div><div class="cr"><span class="cl">작업 비용</span><span class="cp">현장 확인 후 안내</span></div><div class="cr"><span class="cl">야간·공휴일</span><span class="cp">별도 할증 없음</span></div><div class="cr"><span class="cl">과견적</span><span class="cp">절대 없음</span></div></div><p class="cn">※ 현장에서 상태를 직접 보고 정확하게 안내해요. 작업 전 반드시 비용 안내 후 동의를 받고 시작해요.</p>
 <div class="sl">FAQ</div><h2 class="st">신창면 수도꼭지 교체 문의</h2><div class="faq-item"><div class="fq">Q. 수전 교체 비용이 얼마예요?</div><div class="fa">A. 제품과 시공 비용을 포함해 현장 확인 후 안내드려요.</div></div><div class="faq-item"><div class="fq">Q. 어떤 브랜드 수전을 추천하나요?</div><div class="fa">A. 예산과 용도에 맞는 제품을 현장에서 추천해드려요.</div></div><div class="faq-item"><div class="fq">Q. 세면대 수전도 교체 가능한가요?</div><div class="fa">A. 주방·욕실·세면대 수전 모두 교체 가능해요.</div></div><div class="faq-item"><div class="fq">Q. 수전 교체 후 A/S가 되나요?</div><div class="fa">A. 작업 후 1년 A/S를 제공해요.</div></div>
-<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비 보유</h2><div class="equip-photos"><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-04.jpg" alt="충청 배관닥터 전문 장비 1" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 1</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-05.jpg" alt="충청 배관닥터 전문 장비 2" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 2</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-03.jpg" alt="충청 배관닥터 전문 장비 3" loading="lazy" width="300" height="180" style="width:100%;height:150px;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 3</div></div></div>
+<div class="sl">EQUIPMENT</div><h2 class="st">전문 장비 보유</h2><div class="equip-photos" style="display:grid;grid-template-columns:repeat(5,1fr);gap:8px;"><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-04.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 1</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-05.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 2</div></div><div class="eq-card"><img src="/images/equipment/ccdoctor-equipment-03.jpg" loading="lazy" style="width:100%;aspect-ratio:1/1;object-fit:cover;display:block;border-radius:8px;"><div class="eq-nm">전문 장비 3</div></div></div>
 <div class="sl">NEARBY</div>
 <h2 class="st">인근 지역도 출장해요</h2>
 <div class="nearby-links"><a href="/faucet/seonjang/">선장면 수리교체</a><a href="/faucet/songak/">송악면 수리교체</a><a href="/faucet/youngin/">영인면 수리교체</a><a href="/faucet/baebang/">배방읍 수리교체</a><a href="/faucet/yeomchi/">염치읍 수리교체</a><a href="/faucet/dogo/">도고면 수리교체</a><a href="/faucet/dunpo/">둔포면 수리교체</a><a href="/faucet/seonjang/">선장면 수리교체</a></div>
